@@ -2,8 +2,7 @@
 
 # STEMIS - Integração de API com Front-end
 
-# `<img src="image/README/1667335371330.png"/>https://file+.vscode-resource.vscode-cdn.net/home/thiago/GitHub/API_Flask_REST_hoteis/image/README/1667335371330.png />`
-
+`<img src="image/README/1667335371330.png"/>`
 
 Instruções para o desafio de integração da API em flask com o front-end em Vue.js.
 
