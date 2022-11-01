@@ -1,5 +1,9 @@
 # FALTA ADICIONAR O DESAFIO E OS COMANDOS PARA BUILD E RUN
+
 # STEMIS - Integração de API com Front-end
+
+# `<img src="image/README/1667335371330.png"/>https://file+.vscode-resource.vscode-cdn.net/home/thiago/GitHub/API_Flask_REST_hoteis/image/README/1667335371330.png />`
+
 
 Instruções para o desafio de integração da API em flask com o front-end em Vue.js.
 
@@ -8,23 +12,22 @@ Instruções para o desafio de integração da API em flask com o front-end em V
 ## Índice
 
 1. [GitHub](#1-github)
-    1. [Criar Conta](#11-criar-conta)
-    2. [GitHub Desktop](#12-github-desktop)
-    3. [Fork do Repositório](#13-fork-do-repositório)
+   1. [Criar Conta](#11-criar-conta)
+   2. [GitHub Desktop](#12-github-desktop)
+   3. [Fork do Repositório](#13-fork-do-repositório)
 2. [Docker](#2-docker)
-    1. [Instalando o Docker](#21-instalando-o-docker)
-    2. [Build](#22-build)
-        1. [Back-end](#221-back-end)
-        2. [Front-end](#222-front-end)
-    3. [Run](#23-run)
-        1. [Back-end](#231-back-end)
-        2. [Front-end](#232-front-end)
-    4. [Visualizar Containers em Execução](#24-visualizar-containers-em-execução)
+   1. [Instalando o Docker](#21-instalando-o-docker)
+   2. [Build](#22-build)
+      1. [Back-end](#221-back-end)
+      2. [Front-end](#222-front-end)
+   3. [Run](#23-run)
+      1. [Back-end](#231-back-end)
+      2. [Front-end](#232-front-end)
+   4. [Visualizar Containers em Execução](#24-visualizar-containers-em-execução)
 3. [Desafio](#3-desafio)
 4. [Finalizando](#4-finalizando)
-    1. [Commit](#41-commit)
-    2. [Pull Request](#42-pull-request)
-
+   1. [Commit](#41-commit)
+   2. [Pull Request](#42-pull-request)
 
 ---
 
@@ -46,14 +49,14 @@ A alternativa ao uso do GitHub Desktop é a instalação do comando [Git](https:
 
 Não se esqueça de sempre que tiver dúvidas buscar uma solução na [documentação oficial do GitHub](https://docs.github.com/pt).
 
-
 ### 1.3 Fork do Repositório
 
 Em engenharia de software, um fork ou bifurcação acontece quando um desenvolvedor inicia um projeto independente com base no código de um projeto já existente, ou seja, quando um software é desenvolvido com base em outro, já existente, sem a descontinuidade deste último.
 
 Para fazer um fork e clonar o repositório basta seguir o [tutorial](https://docs.github.com/pt/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop).
 
---- 
+---
+
 ## 2. Docker
 
 O [Docker](https://www.docker.com/) é uma plataforma open source que facilita a criação e administração de ambientes isolados. Ele possibilita o empacotamento de uma aplicação ou ambiente dentro de um container, se tornando portátil para qualquer outro host que contenha o Docker instalado. Então, você consegue criar, implantar, copiar e migrar de um ambiente para outro com maior flexibilidade. A ideia do Docker é subir apenas uma máquina, ao invés de várias. E, nessa única máquina, você pode rodar várias aplicações sem que haja conflitos entre elas.
@@ -97,9 +100,10 @@ docker run
 ```
 
 Para verificar se o container está rodando corretamente, acesse no seu navegador:
+
 ```
 localhost:5000/
-``` 
+```
 
 #### 2.3.2 Front-end
 
@@ -113,7 +117,7 @@ Para verificar se o container está rodando corretamente, acesse no seu navegado
 
 ```
 localhost:8080/
-``` 
+```
 
 ### 2.4 Visualizar containers em execução
 
@@ -124,6 +128,7 @@ docker ps
 ```
 
 Para ver uma lista com todos os containers:
+
 ```
 docker ps -a
 ```
@@ -148,8 +153,7 @@ Para efetuar um commit com suas alterações basta seguir o [tutorial](https://d
 
 ### 4.2 Pull Request
 
-É possível criar uma pull request para propor alterações que você fez em um fork de um repositório upstream. Para isso basta seguir o [tutorial](
-https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+É possível criar uma pull request para propor alterações que você fez em um fork de um repositório upstream. Para isso basta seguir o [tutorial](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
 Pronto, o desafio esta finalizado, agora nós vamos avaliar a execução e te daremos uma resposta em breve.
 
