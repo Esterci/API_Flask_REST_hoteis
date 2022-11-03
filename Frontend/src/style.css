@@ -1,0 +1,838 @@
+#app {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+div.clear {
+    clear: both;
+}
+
+div#geral {
+    font-size: 12px !important;
+    line-height: 21px;
+    min-width: 990px;
+    /* rodape colado */
+    min-height: 100%;
+    position: relative;
+}
+
+h2,
+.margemTit {
+    margin-bottom: 10px;
+}
+
+.centraliza {
+    margin: 0px auto !important;
+    display: block;
+}
+
+.infoTit {
+    color: black;
+    font-size: 11px;
+    font-style: italic;
+    color: #00619d;
+}
+
+h2,
+h3,
+h4 {
+    color: #007dc9;
+    font-weight: normal;
+}
+
+h2#topoEsquerda {
+    margin-top: -1px;
+    padding: 15px 13px 15px 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+h2#topoDireita {
+    align-content: flex-start;
+    padding: 15px 0 15px 25px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 a {
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #007dc9;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.legenda {
+    font-size: 11px;
+    color: dimgrey;
+}
+
+/* alteração sr.wilson */
+a.linkSimples {
+    color: #007dc9 !important;
+}
+
+a.linkSimples:hover {
+    color: #5fc2ff;
+    text-decoration: none !important;
+}
+
+h3 {
+    border-bottom: 1px solid #ddd;
+    background-color: #f3f5f4;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+    padding: 15px;
+}
+
+/*
+  .tableHeader, .corpoTabela{border-spacing: 0px;}
+  
+  .tableHeader{
+      background: #f3f5f4;
+      border-bottom: 2px solid #ddd;
+      color: #007DC9;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: bold;
+      text-indent: 5px;
+  }
+  .tableHeaderFirst, .corpoTabelaFirst{
+      border-left: 0px;
+  }
+  .tableHeaderMiddle, .corpoTabelaMiddle{
+      border-left: 1px solid #ddd;
+  }
+  .tableHeaderLast, .corpoTabelaLast{
+      border-left: 1px solid #ddd;
+      border-right: 0px;
+  }
+  .corpoTabela td{
+      border-top: 1px solid #ddd;
+      font-size: 11px;
+      text-indent: 5px;
+  }
+  */
+
+header#topo {
+    height: 50px;
+    line-height: 50px;
+    background-color: #007dc9;
+    color: #fff;
+}
+
+header#topo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+div#tituloBusca {
+    padding: 10px 20px 10px 20px;
+    background-color: #deecf4;
+    height: 75px;
+}
+
+div#foto a#linkCamera {
+    background-image: url("@/vendors/images/sprite_default.png");
+    background-repeat: no-repeat;
+}
+
+.visivel {
+    visibility: visible;
+}
+
+div#buscarNovoLoginSenha {
+    float: right;
+    width: 69.9%;
+    height: 49px;
+}
+
+div#busca {
+    float: left;
+    min-width: 100px;
+    width: 40%;
+}
+
+div#busca div.submit input {
+    border: 1px solid #333;
+    display: none;
+}
+
+div#busca div.input input#BuscaKey {
+    background-image: url("@/vendors/images/lupa_pesquina.png");
+    background-repeat: no-repeat;
+    background-position: 5px 9px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 8px 0 0 15px;
+    font-size: 12px;
+    padding-left: 20px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #0071b6;
+}
+
+div#busca ul li {
+    line-height: 30px;
+}
+
+span#linkPesquisa a {
+    color: #c80000 !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+}
+
+div#dadosPaciente {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+div#dadosPaciente div#dados,
+div#dadosPaciente div#foto {
+    float: left;
+}
+
+div#dadosPaciente div#dados {
+    position: absolute;
+    display: table;
+    left: 80px;
+    width: 60%;
+    margin-left: 3px;
+}
+
+span#statusTempo {
+    font-size: 10px !important;
+}
+
+div#eptsContainer {
+    position: relative;
+    top: 60px;
+}
+
+div#eptsContainer span#eptsResult {
+    line-height: 20px;
+    font-size: 10px !important;
+    color: #007dc9 !important;
+    background-color: #e1e1e1;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+div#dadosPaciente div#dados p span#tipoIdade {
+    /* line-height: 17px !important; */
+    font-size: 11px;
+    color: #646464;
+    font-style: italic;
+    z-index: 1;
+}
+
+div#dadosPaciente div#dados p span {
+    text-transform: capitalize !important;
+    font-size: 11px;
+    /* color: black !important; */
+    font-style: normal !important;
+}
+
+div#dadosPaciente div#dados p span a#nomeDoPaciente {
+    display: block;
+    width: 97%;
+    color: black !important;
+    font-size: 12px;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+
+div#dadosPaciente div#dados p span a.statusNome {
+    padding-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+div#dadosPaciente div#dados p span a#nomeDoPaciente:hover,
+div#dadosPaciente div#dados p span a.statusNome:hover {
+    text-decoration: underline !important;
+}
+
+div#dadosPaciente div#dados span#statusPerfil {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px !important;
+}
+
+div#dadosPaciente div#dados span#statusPerfil.contraindicado {
+    color: #be2f2f !important;
+}
+
+div#dadosPaciente div#dados span#statusPerfil.efetivado {
+    color: #438b47 !important;
+}
+
+div#dadosPaciente div#dados span#statusPerfil.efetivado div#dadosPaciente div#backgrdPaciente {
+    position: absolute;
+    width: 330px;
+    height: 85px;
+    margin: -6px 0 0 -5px;
+    border-radius: 5px;
+}
+
+.bordaPaciente {
+    border: 1px solid #0088c8;
+}
+
+div#foto {
+    position: relative;
+}
+
+div#foto img {
+    width: 75px;
+    height: 56px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+/*
+  div#foto img:hover {
+      width: 250px;
+      height: 187px;
+      border-radius:2px;
+      z-index: 2 !important;
+      box-shadow: 4px 4px 2px #b8b8b8;
+  }
+  */
+div#foto a#linkCamera {
+    position: absolute;
+    left: 60px;
+    top: 61px;
+    background-position: 3px -456px;
+    width: 20px;
+    height: 20px;
+    font-size: 0px;
+}
+
+div#menuConteudo {
+    width: 100%;
+    min-width: 990px;
+}
+
+section#menuLateral {
+    width: 30%;
+    /*	border-right: 1px solid #DDD;*/
+    border-top: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+section#conteudo {
+    border-left: 1px solid #ddd;
+    width: 69.9%;
+    margin: auto;
+    min-height: 500px !important;
+    /* rodape colado */
+    padding-bottom: 30px;
+}
+
+section#menuLateral,
+section#conteudo {
+    float: left;
+}
+
+/* sem paciente pesquisado e salvo na sessão */
+section#menuLateral li {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 12px 0 12px 0;
+    color: #727272;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+section#menuLateral li a {
+    color: #666;
+    text-decoration: none;
+}
+
+section#menuLateral li a:hover {
+    color: #0054a6;
+}
+
+/* com paciente na sessão */
+section#menuLateral nav {
+    position: relative;
+}
+
+a#limparPaciente {
+    position: absolute;
+    background-image: url("@/vendors/images/close.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    color: #007dc9;
+    font-size: 0px;
+    text-indent: -9000px;
+}
+
+section#menuLateral nav li a,
+section#menuLateral li.expandeOpcoes {
+    display: block;
+    font-size: 14px;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+
+section#menuLateral li.expandeOpcoes {
+    cursor: context-menu;
+}
+
+section#menuLateral nav ul li.item {
+    color: #666 !important;
+    font-weight: bold !important;
+}
+
+section#menuLateral li.subitem a,
+section#menuLateral li a {
+    color: #666 !important;
+    font-weight: normal !important;
+}
+
+section#menuLateral div.protocolosPre,
+section#menuLateral div.protocolosPos,
+section#menuLateral div.examesComplementares {
+    display: none;
+}
+
+section#menuLateral div.protocolosPre li a,
+section#menuLateral div.protocolosPos li a,
+section#menuLateral div.examesComplementares li a {
+    font-weight: normal !important;
+    font-size: 12px !important;
+    padding-left: 10px;
+}
+
+section#menuLateral li a.linkMenuProntuarioClicado {
+    color: #017cc9 !important;
+}
+
+div#fundoPerfil {
+    height: 115px;
+    background-position: 0px 66px;
+    background-color: #e9eceb;
+}
+
+.datepicker {
+    z-index: 100;
+}
+
+div.error-message {
+    color: red !important;
+    font-size: 11px;
+    z-index: 1;
+}
+
+div#flashMessage {
+    background-color: #fff;
+    font-weight: bold !important;
+    border-bottom: 1px solid #ddd;
+    color: #fc0909;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+div.cake-debug-output {
+    color: #000;
+}
+
+/*** formulários ***/
+section#conteudo div.input {
+    margin-bottom: 10px;
+}
+
+section#conteudo form div.text input,
+section#conteudo form div.number input {
+    padding: 8px;
+    box-shadow: inset 0px 1px 2px #cdcdcd;
+    border-radius: 4px;
+    border: 1px solid #c1c1c1;
+    color: #3d3d3d;
+}
+
+section#conteudo form label {
+    text-align: right;
+}
+
+section#conteudo form table div.input.search label,
+section#conteudo form div.input.number label,
+section#conteudo form div.input.select label,
+section#conteudo form div.input.text label,
+section#conteudo form div.input.datetime label,
+section#conteudo form legend,
+section#conteudo form div.input.date label {
+    text-align: right;
+    margin-right: 10px;
+    width: 200px;
+    float: left;
+}
+
+section#conteudo form table tr.input.radio label {
+    padding: 5px 20px 0 2px;
+}
+
+.css3button {
+    background-color: #007dc9;
+    border: 1px solid #3079ed;
+    color: #ffffff;
+    font-size: 10px !important;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+button.css3button:hover {
+    background-color: #006aa3;
+}
+
+/* botões de submit de formulários */
+button#submit {
+    float: right;
+    margin-top: 10px;
+}
+
+button#submit a {
+    display: block;
+}
+
+button#submit div.submit input,
+button#submit input {
+    color: #fff;
+    border: none;
+    background: none !important;
+    cursor: pointer;
+    /*
+      font-size: 12px;
+      font-weight: bold;
+  */
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    /*	font-size: 10px;*/
+}
+
+/* -------- */
+.css3buttonalt {
+    /*  background-image:-webkit-linear-gradient(top, #4388f8 0%, #2862bd 100%);*/
+    background: #2a88e2;
+    border: 1px solid #067ec3;
+    color: #fff;
+    /*    text-shadow:rgba(0, 0, 0, 0.0980392) 0 1px;*/
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.css3buttonalt a {
+    /*	font-size: 10px !important;*/
+    padding: 5px;
+    display: block;
+}
+
+.css3buttonalt:hover {
+    background: #067ec3;
+    border: 1px solid #2a88e2;
+}
+
+.botVoltar {
+    background: url(@/vendors/images/icon-voltar.svg) #2a88e2 no-repeat 14px center;
+    font-size: 12px;
+    padding-left: 20px !important;
+}
+
+.botVoltar:hover {
+    background: url(@/vendors/images/icon-voltar.svg) #067ec3 no-repeat 14px center;
+}
+
+.botBlue1 {
+    border-radius: 2em;
+    border: none;
+    text-decoration: none;
+    font-size: 10px !important;
+    background-color: #1963db;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.botBlue1:hover {
+    background-color: #1e54ad;
+    color: #fff;
+    box-shadow: inset 0 1px 1px #0d2853;
+}
+
+.botBlue1 a {
+    display: block;
+    line-height: 20px;
+    width: 85px;
+}
+
+.botRedExcluir {
+    border-radius: 2em;
+    border: none;
+    text-decoration: none;
+    font-size: 10px !important;
+    background-color: #c42222;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.botRedExcluir:hover {
+    background-color: #b21a1a;
+    color: #fff;
+    box-shadow: inset 0 1px 1px #840101;
+}
+
+.botRedExcluir a {
+    display: block;
+    line-height: 20px;
+    width: 85px;
+}
+
+/* -------- */
+
+div#botao input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px;
+    outline: none;
+}
+
+div#buscarNovoLoginSenha button#linkTopo {
+    float: left;
+    margin: 10px 0 0 45px;
+    border: none;
+    background: none;
+}
+
+div#buscarNovoLoginSenha button#linkTopo:hover {
+    background-color: #355880;
+    border-radius: 5px;
+}
+
+div#buscarNovoLoginSenha button#linkTopo,
+div#buscarNovoLoginSenha button#linkTopo a {
+    height: 30px;
+    width: 30px;
+}
+
+div#buscarNovoLoginSenha button#linkTopo a {
+    display: block;
+    background-image: url("@/vendors/images/sprite_topo.png");
+    background-repeat: no-repeat;
+    background-position: -158px 0px;
+}
+
+div#buscarNovoLoginSenha div#loginInfo {
+    float: right;
+}
+
+div#buscarNovoLoginSenha div#loginInfo span {
+    padding: 0 10px 0 10px;
+}
+
+div#buscarNovoLoginSenha #loginInfo .content {
+    display: none;
+}
+
+/* para alternar texto com jquery */
+
+div#buscarNovoLoginSenha div#configUser {
+    background-image: url("@/vendors/images/sprite_topo.png");
+    background-repeat: no-repeat;
+    background-position: -191px -3px;
+    margin-top: 9px;
+    margin-right: 10px;
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+div#buscarNovoLoginSenha div#configUser:hover {
+    background-color: #355880;
+    border-radius: 5px;
+}
+
+/*** dados já cadastrados ***/
+div#dadosView {
+    width: 95%;
+    margin: auto;
+    /*	padding-bottom: 30px;*/
+}
+
+div#dadosView p {
+    margin: auto;
+    padding: 10px 0px 0px 10px;
+    border-bottom: 1px solid #ddd;
+    color: black !important;
+    font-size: 12px;
+    height: 30px;
+}
+
+div#dadosView p span {
+    font-weight: normal;
+    font-size: 12px !important;
+    color: #656565;
+    /*display: block;*/
+    width: 60%;
+    float: right;
+    text-align: left;
+}
+
+div#dadosView p span.status {
+    font-weight: normal !important;
+    color: #000;
+    position: relative;
+}
+
+div#dadosView p span span.statusSinal {
+    position: absolute;
+    left: -15px;
+}
+
+div#dadosView div#motivo {
+    margin: auto;
+    height: 80px;
+    padding: 10px 0px 0px 10px;
+    border-bottom: 1px solid #ddd;
+    color: black !important;
+    font-size: 12px;
+}
+
+div#dadosView div#motivo div#motivoTexto {
+    font-weight: normal;
+    font-size: 12px !important;
+    color: #656565;
+    display: block;
+    width: 75%;
+    float: right;
+    text-align: justify;
+}
+
+#dadosView form select {
+    height: 30px;
+    border: 1px solid #ddd;
+    color: #363636 !important;
+}
+
+div.submit input:hover {
+    cursor: pointer;
+}
+
+span.status {
+    font-weight: bold !important;
+}
+
+span.status a {
+    text-decoration: none;
+}
+
+span.statusSinal {
+    position: absolute;
+    width: 10px !important;
+    height: 10px;
+    border-radius: 100%;
+    margin-top: 4px;
+}
+
+span.preto,
+span.statusSinal.preto {
+    background-color: #3b373b !important;
+}
+
+span.vermelho,
+span.statusSinal.vermelho {
+    background-color: #8b0000 !important;
+}
+
+span.amarelo,
+span.statusSinal.amarelo {
+    background-color: #fdd835 !important;
+}
+
+span.verde,
+span.statusSinal.verde {
+    background-color: #00bfa5 !important;
+}
+
+span.azul,
+span.statusSinal.azul {
+    background-color: #0288d1 !important;
+}
+
+div#prePos {
+    height: 32px;
+    margin-top: 2px !important;
+    margin-bottom: 5px !important;
+}
+
+div#pretx,
+div#postx {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    font-weight: bold !important;
+}
+
+div#pretx {
+    float: left;
+}
+
+div#postx {
+    float: right;
+}
+
+div.menuTxSelecionado {
+    width: 80%;
+    border: 1px solid #006bac;
+    background-color: #007cc9;
+    color: #fff !important;
+}
+
+div.menuTxMin {
+    width: 18%;
+    background-color: #eaebec;
+    color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
