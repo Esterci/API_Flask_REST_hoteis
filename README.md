@@ -66,7 +66,7 @@ Com o uso do Docker podemos disponibilizar containers para que possam rodar as a
 
 Para Windows e Mac é necessária a instalação de um software chamado [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/), com ele virá a possibilidade também de rodar Docker no terminal, que é onde aplicaremos a maioria dos comandos daqui pra frente.
 
-Para usuários de Linux é recomendada a instalação do [Docker Engine](https://docs.docker.com/engine/install/), a versão escolhida sera baseada na distribuição. Dessa forma teremos o Docker disponivel para execução de comandos via terminal.
+Para usuários de Linux é recomendada a instalação do [Docker Engine](https://docs.docker.com/engine/install/), a versão escolhida sera baseada na distribuição. Dessa forma teremos o Docker disponivel para execução de comandos via terminal. Também será necessária a instalação do [Docker Compose](https://docs.docker.com/compose/install/), uma ferramenta para a orquestração de múltiplos containers.
 
 ### 2.2 Build
 
@@ -135,6 +135,20 @@ docker ps -a
 ---
 
 ## 3. Desafio
+
+
+| Campo                          | Tipo de Entrada | Exemplo           | Observação                                                                       |
+|--------------------------------|-----------------|-------------------|----------------------------------------------------------------------------------|
+| Nome do Paciente               | string          | José da Silva     |                                                                                  |
+| CPF                            | string          | 111.222.333-44    |                                                                                  |
+| Data de Nascimento             | date            | 01/01/1990        |                                                                                  |
+| Tipo Sanguineo                 | string          | A+                |                                                                                  |
+| Peso                           | number          | 75kg              |                                                                                  |
+| Intestino Delgado Remanescente | number          | 10cm              |                                                                                  |
+| Valvula Ileocecal              | boolean         | True              |                                                                                  |
+| Estomia                        | string          | Traqueostomia     | Opções entre [Colostomia, Ileostomia, Urostomia, Gastrostomia ou Traqueostomia]  |
+| Segmento de Colon Remanescente | string          | Transverso        | Opções entre [Ascendente, Transverso, Descendente, Sigmoide ou Reto]             |
+| Outra complicações             | string          | Arritmia cardíaca |                                                                                  |
 
 ---
 
