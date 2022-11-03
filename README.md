@@ -1,8 +1,6 @@
-# FALTA ADICIONAR O DESAFIO E OS COMANDOS PARA BUILD E RUN
-
 # STEMIS - Integração de API com Front-end
 
-`<img src="image/README/1667335371330.png"/>`
+![stemis logo](./stemis-logo.png)
 
 Instruções para o desafio de integração da API em flask com o front-end em Vue.js.
 
@@ -20,8 +18,6 @@ Instruções para o desafio de integração da API em flask com o front-end em V
       1. [Back-end](#221-back-end)
       2. [Front-end](#222-front-end)
    3. [Run](#23-run)
-      1. [Back-end](#231-back-end)
-      2. [Front-end](#232-front-end)
    4. [Visualizar Containers em Execução](#24-visualizar-containers-em-execução)
 3. [Desafio](#3-desafio)
 4. [Finalizando](#4-finalizando)
@@ -74,7 +70,7 @@ O comando docker build constrói uma imagem a partir de um Dockerfile e de um co
 
 #### 2.2.1 Back-end
 
-##### 2.2.1.1 API
+#### 2.2.1.1 API
 
 Com o diretório do `./Backend/API/` aberto do terminal, para costruir o container da API basta executar o seguinte comando.
 
@@ -84,7 +80,7 @@ docker build ./ -t flask_api
 
 
 
-##### 2.2.1.1 Base de dados
+#### 2.2.1.1 Base de dados
 
 Com o diretório do `./Backend/DB/` aberto do terminal, para costruir o container da API basta executar o seguinte comando.
 
@@ -104,32 +100,30 @@ docker build ./ -t my_vue
 
 ### 2.3 Run
 
-#### 2.3.1 Back-end
+A execução dos containers será executada utilizando a ferramenta docker-compose. Uma ferramenta para a orquestração de múltiplos containers.
 
-Para executar o back-end, basta executar o seguinte comando.
+Para executar basta rodar o seguinte comando.
 
 ```
-docker run 
+docker-compose up
 ```
 
-Para verificar se o container está rodando corretamente, acesse no seu navegador:
+Para verificar se o container do back-end está rodando corretamente, acesse no seu navegador:
 
 ```
 localhost:5000/
 ```
 
-#### 2.3.2 Front-end
-
-Para executar o front-end, basta executar o seguinte comando.
-
-```
-docker run 
-```
-
-Para verificar se o container está rodando corretamente, acesse no seu navegador:
+Para verificar se o container do front-end está rodando corretamente, acesse no seu navegador:
 
 ```
 localhost:8080/
+```
+
+Para encerrar os containers basta executar o comando abaixo.
+
+```
+docker-compose down
 ```
 
 ### 2.4 Visualizar containers em execução
@@ -150,19 +144,29 @@ docker ps -a
 
 ## 3. Desafio
 
+O nosso repositório consiste em um sistema web completo para cadastro de hoteis. O sistema é capaz de acessar um banco de dados SQL através de uma API  RESTful usando a biblioteca Flask do Python. Essa API é responsável por fazer as ações de CRUD (Create, Read, Update e Delete) dos registros de hotel no nosso banco de dados. O front-end da aplicação é construído em Vue.js, onde o usuário é capaz de interagir as informações dos hoteis cadastrados no banco.
 
-| Campo                          | Tipo de Entrada | Exemplo           | Observação                                                                       |
-|--------------------------------|-----------------|-------------------|----------------------------------------------------------------------------------|
-| Nome do Paciente               | string          | José da Silva     |                                                                                  |
-| CPF                            | string          | 111.222.333-44    |                                                                                  |
-| Data de Nascimento             | date            | 01/01/1990        |                                                                                  |
-| Tipo Sanguineo                 | string          | A+                |                                                                                  |
-| Peso                           | number          | 75kg              |                                                                                  |
-| Intestino Delgado Remanescente | number          | 10cm              |                                                                                  |
-| Valvula Ileocecal              | boolean         | True              |                                                                                  |
-| Estomia                        | string          | Traqueostomia     | Opções entre [Colostomia, Ileostomia, Urostomia, Gastrostomia ou Traqueostomia]  |
-| Segmento de Colon Remanescente | string          | Transverso        | Opções entre [Ascendente, Transverso, Descendente, Sigmoide ou Reto]             |
-| Outra complicações             | string          | Arritmia cardíaca |                                                                                  |
+O desafio consiste na seguinte tarefa: 
+
+ - **Substituir o sistema de cadastro de hoteis para um sistema de cadastro de pacientes.**
+
+O sistema deverá conter a API em Flask acessando o banco de dados e um front-end em Vue.js capaz de interagir com os dados executando as 4 ações de CRUD.
+O cadastro de um paciente deverá conter as seguintes informações:
+
+| **Campo**                      | **Tipo de Entrada** | **Exemplo**       | **Observação**                                                                   |
+|--------------------------------|---------------------|-------------------|----------------------------------------------------------------------------------|
+| Nome do Paciente               | string              | José da Silva     |                                                                                  |
+| CPF                            | string              | 111.222.333-44    |                                                                                  |
+| Data de Nascimento             | date                | 01/01/1990        |                                                                                  |
+| Tipo Sanguineo                 | string              | A+                |                                                                                  |
+| Peso                           | number              | 75kg              |                                                                                  |
+| Intestino Delgado Remanescente | number              | 10cm              |                                                                                  |
+| Valvula Ileocecal              | boolean             | True              |                                                                                  |
+| Estomia                        | string              | Traqueostomia     | Opções entre [Colostomia, Ileostomia, Urostomia, Gastrostomia ou Traqueostomia]  |
+| Segmento de Colon Remanescente | string              | Transverso        | Opções entre [Ascendente, Transverso, Descendente, Sigmoide ou Reto]             |
+| Outra complicações             | string              | Arritmia cardíaca |                                                                                  |
+
+Caso ainda exista alguma dúvida, o veja o [vídeo de explicação do desafio]().
 
 ---
 
