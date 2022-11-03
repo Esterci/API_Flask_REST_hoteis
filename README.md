@@ -70,23 +70,37 @@ Para usuários de Linux é recomendada a instalação do [Docker Engine](https:/
 
 ### 2.2 Build
 
-O comando docker build constrói uma imagem a partir de um Dockerfile e de um contexto. O contexto do build é o conjunto de arquivos na localização especificada PATH. O PATH é o diretório no seu sistema de arquivos local.
+O comando docker build constrói uma imagem a partir de um Dockerfile e de um contexto. O contexto do build é o conjunto de arquivos na localização especificada `PATH`. O `PATH` é o diretório no seu sistema de arquivos local.
 
 #### 2.2.1 Back-end
 
-Com o diretório do back-end aberto do terminal, para costruir o container do back-end basta executar o seguinte comando.
+##### 2.2.1.1 API
+
+Com o diretório do `./Backend/API/` aberto do terminal, para costruir o container da API basta executar o seguinte comando.
 
 ```
-docker build 
+docker build ./ -t flask_api
 ```
+
+
+
+##### 2.2.1.1 Base de dados
+
+Com o diretório do `./Backend/DB/` aberto do terminal, para costruir o container da API basta executar o seguinte comando.
+
+```
+docker build ./ -t mysql_db
+```
+
 
 #### 2.2.2 Front-end
 
-Com o diretório do front-end aberto do terminal, para costruir o container do front-end basta executar o seguinte comando.
+Com o diretório do `./Frontend/` aberto do terminal, para costruir o container da API basta executar o seguinte comando.docker build
 
 ```
-docker build 
+docker build ./ -t my_vue
 ```
+
 
 ### 2.3 Run
 

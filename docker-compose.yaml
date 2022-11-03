@@ -1,0 +1,41 @@
+version: '3.3'
+
+services:
+  DB:
+    image: mysql_db
+    volumes:
+      - ./Backend/DB/:/docker-entrypoint-initdb.d/
+    # restart: always
+    ports:
+      - "3306:3306"
+    env_file:
+      - ./Backend/DB/config/db.env
+    networks:
+      - flask_network
+    command: --secure-file-priv=""
+
+  API:
+    depends_on:
+      - DB
+    image: flask_api
+    volumes:
+      - ./Backend/API/:/app/
+    # restart: always
+    ports:
+      - "5000:5000"
+    networks:
+      - flask_network
+    
+    restart: on-failure
+
+  FRONT:
+    image: my_vue
+    volumes:
+      - ./Frontend/:/app/
+    # restart: always
+    ports:
+      - "8080:8080"
+
+networks:
+  flask_network:
+    driver: bridge
