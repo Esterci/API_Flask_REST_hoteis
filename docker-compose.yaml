@@ -25,13 +25,14 @@ services:
       - "5000:5000"
     networks:
       - flask_network
-    
+
     restart: on-failure
 
   FRONT:
     image: my_vue
     volumes:
       - ./Frontend/:/app/
+      - /app/node_modules
     # restart: always
     ports:
       - "8080:8080"

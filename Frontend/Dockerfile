@@ -2,17 +2,19 @@ FROM node
 
 WORKDIR /app
 
-#ENV PATH /app/node_modules/.bin:$PATH
+COPY package.json /app
 
-COPY package.json ./
+COPY package-lock.json /app
 
 RUN npm install -g @vue/cli
 
+RUN npm audit fix --force
+
 RUN npm i --save
 
-RUN npm audit fix
+RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
 
-COPY . .
+COPY . /app
 
 EXPOSE 8080
 

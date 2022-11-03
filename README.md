@@ -102,7 +102,7 @@ docker build ./ -t my_vue
 
 A execução dos containers será executada utilizando a ferramenta docker-compose. Uma ferramenta para a orquestração de múltiplos containers.
 
-Para executar basta rodar o seguinte comando.
+Para executar os containers, volte a pasta raiz do repositório e execute o seguinte comando.
 
 ```
 docker-compose up
@@ -119,6 +119,8 @@ Para verificar se o container do front-end está rodando corretamente, acesse no
 ```
 localhost:8080/
 ```
+
+Para interromper os containers basta utilizar o atalho `CTRL+C` no terminal.
 
 Para encerrar os containers basta executar o comando abaixo.
 
@@ -144,14 +146,13 @@ docker ps -a
 
 ## 3. Desafio
 
-O nosso repositório consiste em um sistema web completo para cadastro de hoteis. O sistema é capaz de acessar um banco de dados SQL através de uma API  RESTful usando a biblioteca Flask do Python. Essa API é responsável por fazer as ações de CRUD (Create, Read, Update e Delete) dos registros de hotel no nosso banco de dados. O front-end da aplicação é construído em Vue.js, onde o usuário é capaz de interagir as informações dos hoteis cadastrados no banco.
+O nosso repositório consiste em um sistema web completo para cadastro de hoteis. O sistema é capaz de acessar um banco de dados SQL através de uma API  RESTful usando a biblioteca Flask do Python. Essa API é responsável por fazer as ações de CRUD (Create, Read, Update e Delete) dos registros de hotel no nosso banco de dados. O front-end da aplicação é construído em Vue.js, onde o usuário é capaz de preencher um formulário cadastrando hoteis no banco de dados.
 
 O desafio consiste na seguinte tarefa: 
 
  - **Substituir o sistema de cadastro de hoteis para um sistema de cadastro de pacientes.**
 
-O sistema deverá conter a API em Flask acessando o banco de dados e um front-end em Vue.js capaz de interagir com os dados executando as 4 ações de CRUD.
-O cadastro de um paciente deverá conter as seguintes informações:
+O sistema deverá conter a API em Flask acessando o banco de dados e um front-end em Vue.js capaz de interagir com os dados executando o cadastro de um novo paciente. No cadastro de um paciente deverá conter as seguintes informações:
 
 | **Campo**                      | **Tipo de Entrada** | **Exemplo**       | **Observação**                                                                   |
 |--------------------------------|---------------------|-------------------|----------------------------------------------------------------------------------|

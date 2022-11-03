@@ -11,6 +11,13 @@ const routes = [
       default: () => import('../views/MyForm.vue')
     },
   },
+  {
+    name: 'hoteis',
+    path: '/hoteis',
+    components: {
+      default: () => import('../views/MyList.vue')
+    },
+  },
 ]
 
 const router = new VueRouter({

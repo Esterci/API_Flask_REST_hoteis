@@ -28,7 +28,20 @@
           ></v-progress-linear>
         </template>
 
-        <v-card-title>Formulário de criação de hoteis</v-card-title>
+        <v-card-title>
+          <v-row>
+            <v-col cols="10"> Formulário de criação de hoteis </v-col>
+            <v-col cols="2">
+              <v-btn
+                dark
+                color="blue darken-4"
+                @click="$router.push({ name: 'hoteis' })"
+              >
+                Hoteis
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-card-title>
 
         <v-card-text class="mt-4">
           <v-form>
@@ -90,7 +103,9 @@
           <v-btn dark color="blue darken-4" @click="cadastrarHotel">
             Submeter
           </v-btn>
-          <v-icon color="green" large v-if="submit">mdi-check-underline-circle</v-icon>
+          <v-icon color="green" large v-if="submit"
+            >mdi-check-underline-circle</v-icon
+          >
         </v-card-actions>
       </v-card>
     </v-row>
