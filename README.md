@@ -167,7 +167,7 @@ O sistema deverá conter a API em Flask acessando o banco de dados e um front-en
 | Segmento de Colon Remanescente | string              | Transverso        | Opções entre [Ascendente, Transverso, Descendente, Sigmoide ou Reto]             |
 | Outra complicações             | string              | Arritmia cardíaca |                                                                                  |
 
-Caso ainda exista alguma dúvida, o veja o [vídeo de explicação do desafio]().
+Caso ainda exista alguma dúvida, o veja o [vídeo de explicação do desafio](https://youtu.be/jg3RQPrrSd8).
 
 ---
 
